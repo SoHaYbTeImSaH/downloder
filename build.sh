@@ -1,11 +1,13 @@
 #!/bin/sh
 
-# Activate venv
+# ایجاد محیط مجازی
 python -m venv /opt/venv
+
+# فعال کردن محیط مجازی
 . /opt/venv/bin/activate
 
-# Install dependencies
+# نصب requests
 pip install requests
 
-# Install python-telegram-bot with dependencies fixed
-pip install python-telegram-bot --no-cache-dir --ignore-installed
+# نصب python-telegram-bot
+pip install python-telegram-bot --no-cache-dir
